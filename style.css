@@ -1,0 +1,199 @@
+/**
+* CSS
+*
+* Authored by Allan McCafferty
+*
+*/
+
+:root{ --margin: 27px; --margin900px: 18px; }
+
+html { -moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;
+overflow-x: hidden; overflow-y: scroll; text-rendering: optimizeLegibility;
+-webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+text-size-adjust: 100%; }
+
+body { font-size: 18px; font-family: -apple-system, system-ui, BlinkMacSystemFont,
+"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+"Helvetica Neue", sans-serif; background: #fff; color: #060111; text-align: left;
+line-height: 1.4em; /* font-weight: 300; /* max-width: 900px; /*padding-left: 5%; */}
+
+/* social media icons from Font Awesome */
+.fa { font-size: 16px; color: #fff; width: 16px; height: 16px; text-align: center;
+text-decoration: none; border-radius: 30%; line-height: 50px; vertical-align:middle;
+align-items: center; padding: 15px; }
+
+/* Social media icon stylings */
+.fa-facebook { background-color: #F1FAEE; color: white; }
+.fa-twitter {  background: #55ACEE;  color: #fff;  }
+.fa-linkedin { background: #007bb5; color: #fff; }
+.fa-github { background: red; color: #fff; }
+.fa-instagram { background: #e4405f; color: #fff; }
+.fa-soundcloud { background: #ff5500; color: #fff;}
+
+/* To make hover affect on social icons */
+.fa-facebook { background: #3B5998; color: white; }
+alink { color: mediumpurple; text-decoration: none; }
+.a:hover { color: #B3B3B7; text-decoration: none; }
+alink:hover { text-decoration: none; }
+
+/* link scheme */
+
+/* you can customize links further down the page too */
+a:link { text-decoration: none; color: #000; }
+a:visited { text-decoration: none; color: #000; }
+a:hover { text-decoration: none; color: #06e;}
+a:hover p-red { text-decoration: none; color: #06e; }
+a:active { text-decoration: none; color: #00c; }
+a img { border: none; }
+audio:focus { outline: none; }
+
+/* general styles */
+small { font-size: 9px; }
+code { font-family: monospace; }
+blockquote { padding-left: 9px; }
+.p-white { font-size: 18px; color: #fff; text-shadow: 2px #fff}
+.p-small { font-size: 14px;}
+/* style for A-Z Directory */
+.p-red { font-size: 20px; font-weight: bold; color: #EF3737; line-height: 1em;}
+
+/* headings */
+h1 { font-size: 32px; margin-bottom: 1em; margin-top: 1em; line-height: 1.6; font-weight: bold; color: #060111;}
+.h1 { font-size: 32px; margin-bottom: 0.125rem; margin-top: 1em; line-height: 1.2; /*padding-top: 0.125rem; */ /*padding-right: 10%;*/ font-weight: bold; color: #000;}
+.h1-white {font-size: 32px; margin-bottom: 1em; font-weight: bold; color: #fff;}
+.h1-red {font-size: 32px; margin-bottom: 1em; margin-top: 1em; font-weight: bold; color: #EF3737;}
+.h1-blue {font-size: 36px; margin-bottom: 1em; font-weight: bold; color: #0CEEFF;}
+.h1-home {font-size: 32px; padding-right: 20%; font-weight: bold; color: #EF3737; line-height: 1.6em;}
+h2 { font-size: 24px; margin-bottom: 1em; font-weight: bold; padding-right: 30%;}
+h3 { font-size: 18px; margin-bottom: 1em; padding-right: 30%;}
+.h3-blue { font-size: 24px; margin-bottom: 0.5rem; font-weight: bold; color: #0CEEFF;}
+.h3-red { font-size: 24px; margin-bottom: 0.5rem; font-weight: bold; color: #EF3737;}
+h4 { font-size: 16px; margin-bottom: 1em; }
+
+/* paragraph width */
+#index p { margin-bottom: 1em; padding-right: 20%;}
+#exhibit p, code, blockquote { width: 800px; margin-bottom: 1em; padding-right: 20%; /* line-height: 1.3em; */ }
+
+/* rules to start to make site responsive */
+#index .top {  }
+#index .top { display: flex; justify-content: space-between; flex-wrap: nowrap; }
+#index .top .toggle-hold { display: none; }
+#index .bot {  }
+#index .bot p { margin-bottom: 0; width: auto; }
+
+/* video Responsivity */
+.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;}
+.videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* embed images example */
+.facebook-data { background-image: url("https://ibb.co/sVd4fXw"); max-width: 900px;}
+
+/* highlighter style - maybe you want to change colors? */
+.highlight { background: #ccff00; color: #000; }
+
+/* never adjust the margin or padding here unless you seriously know what you are doing */
+/* think #index .container and #exhibit .container for only padding adjustments */
+#wrapper { min-height: 100vh; max-width: 1800px;}
+#index { width: 305px; background: transparent; /* line-height: 1.3em; */ }
+#exhibit { margin: 0 0 0 305px; }
+#exhibit .top  { display: none; margin-bottom: 3em; }
+
+/* styling the index */
+#index ul { list-style: none; margin: 0; }
+#index ul.section {list-style: none; margin-bottom: 1em; }
+#index ul.subsection { list-style: outside;}
+
+/* the follow rules for index are not required */
+/* they are mostly for complex customization */
+/* for tag display */
+#index ul#all_tags { list-style-type: none; margin-bottom: 1em; }
+#index ul#all_tags li { display: inline !important; margin-right: 3px; }
+#index ul#all_tags li a {  }
+
+/* styles for the section titles */
+#index ul.section span.section_title,
+#index ul.section span.section_title a
+{ color: black; }
+
+/* active section title */
+#index span.active_section_title,
+#index span.active_section_title a { font-weight: bold; }
+
+/* active exhibit title parts */
+/* color of active exhibit title link and font-weight */
+li.active a:link, li a.active, li.active a:hover, li a.active, li.active a:active, li a.active,
+li.active a:visited, li a.active, li span.active, #index ul.section li.active a:link,
+#index ul.section li.active a:hover, #index ul.section li.active a:active, #index ul.section li.active a:visited
+{ font-weight: normal; color: #6F6F6F; }
+
+/* additional #index options */
+#index ul li .password a { /* background: url(../img/locked.gif) right center no-repeat; padding-right: 18px; */ }
+
+/* the "new" indicator */
+#index ul li sup.new_exhibit { color: #0c0; font-weight: bold; text-transform: uppercase; font-size: 8px; vertical-align: top; }
+#index ul li sup.new_exhibit:before { color: #0c0; font-weight: bold; text-transform: uppercase; font-size: 8px; vertical-align: top; content: "New"; }
+/* end styling for index */
+
+/* links styles only for the #index region */
+#index a:link {  }
+#index a:visited {  }
+#index a:hover { opacity: 0.5; }
+#index a:active {  }
+
+/* links styles only for the #exhibit region */
+#exhibit a:link { text-decoration: none; }
+#exhibit a:visited {  }
+#exhibit a:hover { text-decoration: none; }
+#exhibit a:active {  }
+
+/* links styles just for h1 title of site (your name/logo) */
+#index h1 a { font-weight: normal; text-decoration: none; color: #000; }
+
+/* this is where you adjust your paddings for #index and #exhibit together */
+.container { padding: var(--margin);  }
+
+/* this is where you pad them separately */
+#index .container { /* padding-right: 18px;*/ }
+#exhibit .container { min-height: 90vh;  }
+
+/* size and style of titles and captions (not mobile though) */
+.captioning { margin-top: 2px; }
+.title { font-size: 0.7em; font-style: italic; line-height: 1.2em; }
+.caption { font-size: 0.7em; font-style: italic; line-height: 1.2em; }
+
+#background { /* 'fixed' if you want image to never move */ position: absolute; top: 0;
+left: 0; width: 100vw; height: 100vh; /* adjust height of background as desired */
+z-index: 1; background-position: center center; background-size: cover; }
+
+
+@media only screen and (max-width: 900px) {
+
+body { font-size: 16px;}
+.p-white { font-size: 16px; color: #fff; text-shadow: 2px #fff}
+.p-small { font-size: 9px;}
+
+/* headings */
+.h1 { font-size: 22px; margin-bottom: 0.125rem; line-height: 1.2; /*padding-top: 0.125rem; */ /*padding-right: 10%;*/ ffont-weight: bold; color: #000;}
+.h1-white {font-size: 20px; margin-bottom: 3px; font-weight: bold; color: #fff;}
+.h1-red {font-size: 22px; margin-bottom: 0.125rem; font-weight: bold; color: #EF3737;}
+.h1-blue {font-size: 22px; margin-bottom: 0.5rem; font-weight: bold; color: #0CEEFF;}
+.h1-home {font-size: 22px; padding-right: 20%; font-weight: bold; color: #EF3737; line-height: 1.4em;}
+h2 { font-size: 20px; margin-bottom: 1em; font-weight: bold; }
+h3 { font-size: 16px; margin-bottom: 1em; }
+.h3-blue { font-size: 16px; margin-bottom: 0.125rem; margin-top: 0.125rem; font-weight: bold; color: #0CEEFF;}
+.h3-red { font-size: 16px; margin-bottom: 0.125rem; margin-top: 0.125rem; font-weight: bold; color: #EF3737;}
+h4 { font-size: 12px; margin-bottom: 1em; }
+
+/* more rules to make site responsive */
+#index { overflow: auto; position: fixed; height: 75px; width: 100vw; }
+/* #index .active { height: 100%; width: 100vw !important;} */
+#index .active { background: var(--bg); height: 100vh; width: 100vw; overflow: auto; }
+#index .container, #exhibit .container { padding: var(--margin900px); }
+/*#index .container { padding-top: 50px; } */
+#index .top { display: flex; justify-content: space-between; }
+#index .top .toggle-hold { display: block; }
+#index nav { }
+#index .bot { margin-top: 3em; position: relative; left: 0; bottom: auto; width: auto; }
+#exhibit { margin: 0; padding-top: 75px; }
+#exhibit p { width: auto; max-width: none !important; }
+
+}

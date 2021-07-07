@@ -1,0 +1,232 @@
+/* the base.css file is for things that are less commonly changed */
+/* however, it is not unlikely you will want to change #index nav rules */
+
+/* basic things */
+/* * { box-sizing: border-box; } */
+:focus { outline: none; }
+audio:focus { outline: none; }
+video[poster] { object-fit: cover !important; }
+::placeholder { color: var(--color5); }
+
+/* example rules for styling via section */
+body.section-1 { /* background-color: yellow; */ }
+body.section-2 {  }
+/* style via particular exhibit */
+body.exhibit-12 {  }
+/* styling via exhibit format */
+body.visual_index { /* background: green; */ }
+
+/* general styles - not recommended for change */
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+object { display: block; }
+.once { clear: left; }
+.clL { clear: left; }
+
+#wrapper { position: relative; z-index: 2; }
+
+/* this is to prevent some background colors on links in exhibits */
+/* do not change these */
+#img-container span.backgrounded a,
+#img-container a.thickbox,
+#img-container a.thumb-img,
+#img-container #d-col1 a { background: transparent; }
+
+/* not recommended for change */
+#index {
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+	left: 0;
+    position: absolute;
+    height: 100%;
+	z-index: 200;
+}
+#exhibit { height: 100vh; top: 0; z-index: 300 !important; }
+
+/* INDEX NAVIGATION/LINKS RULES */
+/* the following rules for index are not required */
+/* they are mostly for complex customization */
+
+/* styles for the section titles */
+#index ul.section span.section_title,
+#index ul.section span.section_title a
+{ cursor: pointer; font-weight: normal; /* font-size: 18px; */ }
+
+/* styles for hovering section titles */
+#index ul.section span.section_title:hover,
+#index ul.section span.section_title a:hover
+{  }
+
+/* active section titles */
+#index ul.active_section span.active,
+#index ul.active_section span.active a
+{  }
+
+/* sub-section titles */
+#index ul.section span.subsection_title,
+#index ul.section span.subsection_title a
+{ cursor: pointer; /* font-weight: bold; */ }
+
+/* sub-section titles hover */
+#index ul.section span.subsection_title:hover,
+#index ul.section span.subsection_title a:hover
+{  }
+
+/* exhibit titles */
+#index ul.section li.exhibit_title {  }
+#index ul.section li.exhibit_title a:link {  }
+#index ul.section li.exhibit_title a:hover { text-decoration: none; }
+#index ul.section li.exhibit_title a:active {  }
+#index ul.section li.exhibit_title a:visited {  }
+
+/* this is how it indents - delete if you don't like */
+#index ul.section li.exhibit_title:hover { text-indent: 2px; }
+
+/* index links */
+#index ul.section li.exhibit_link {  }
+#index ul.section li.exhibit_link a:link {  }
+#index ul.section li.exhibit_link a:hover {  }
+#index ul.section li.exhibit_link a:active {  }
+#index ul.section li.exhibit_link a:visted {  }
+
+/* active subsection title */
+#index span.active_subsection_title,
+#index span.active_subsection_title a {  }
+
+/* targeted examples */
+/* specific section */
+#index ul#section_1 {  }
+/* links within the specific section */
+#index ul#section_1 li.exhibit_title a {  }
+/* specific exhibit title */
+#index li#exhibit_150 a {  }
+/* affect subsections container */
+#index ul.subsection { /* padding-left: 18px; */  }
+
+/* top/bot divs - not really used but do exist */
+#index .top { /* height: 36px; */ }
+#exhibit .top { }
+#index .bot {  }
+
+/* generic #img-container - but remember that exhibit formats can override these */
+#img-container {  }
+#img-container p {  }
+#img-container .captioning {  }
+#img-container .captioning .title { /* font-size: 13px; */ }
+#img-container .captioning .caption { /* font-size: 13px; */ text-align: left; }
+
+/* the hamburger and cross icons */
+/* https://saeedalipoor.github.io/icono/ */
+.arrow, .icon {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	color: var(--color);
+	box-sizing: border-box;
+}
+.icono-hamburger
+{
+  /* size of box */
+  display: block;
+	width: 30px;
+	height: 30px;
+  background-color: #0CEEFF;
+  position: fixed;
+	margin: 0px;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+
+	/* size/width of leg */
+	width: 18px;
+    height: 20px;
+    box-shadow: inset 0 0 0 32px, 0 -6px, 0 6px;
+	margin: 0 6px;
+}
+.icono-hamburger:before,
+.icono-hamburger:after
+{
+	content: '';
+    pointer-events: none;
+}
+.icon-thumbs
+{
+    width: 3px;
+    height: 3px;
+    box-shadow: 0 -6px 0, -6px -6px 0, 6px -6px 0, 0 0 0 32px inset, -6px 0 0, 6px 0 0, 0 6px 0, -6px 6px 0, 6px 6px 0;
+    margin: 7px;
+}
+.icono-hamburger:before,
+.icono-hamburger:after,
+
+{
+	content: '';
+    pointer-events: none;
+}
+.icono-cross
+{
+	/* size of box */
+  display: block;
+	width: 30px;
+	height: 30px;
+  background-color: #0CEEFF;
+  position: fixed;
+	margin: 0px;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+	/*transform: rotate(45deg);*/
+}
+.icono-cross:before
+{
+	/* size/width of leg */
+	width: 18px;
+	height: 20px;
+}
+.icono-cross:after
+{
+	/* size/width of leg */
+	width: 18px;
+	height: 20px;
+}
+.icono-cross:before,
+.icono-cross:after
+{
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: inset 0 0 0 32px;
+}
+
+.arrow:hover, .icon:hover { opacity: 0.5; }
+.arrow:after, .arrow:before {
+	content: '';
+	box-sizing: border-box;
+}
+.arrow {
+	/* arrow tip lengths */
+	width: 12px; height: 12px;
+	/* tip line widths */
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	margin: 2px;
+	/* box-shadow: 3px -3px 0 rgba(255, 255, 255, 0.8); */
+}
+.arrow:before {
+	top: -1px; /* centers tail */
+	height: 2px; /* tail height */
+	width: 23px; /* length of arrow tail */
+	right: 0;
+	position: absolute;
+	box-shadow: inset 0 0 0 32px;
+	transform: rotate(-45deg);
+	transform-origin: right top;
+}
+.arrow-right { transform: rotate(45deg); }
+.arrow-up { transform: none; }
+.arrow-down { transform: rotate(90deg); }
+.arrow-left { transform: rotate(-135deg); }
