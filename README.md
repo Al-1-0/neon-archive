@@ -1,2 +1,2 @@
 # neon-archive
-Modifications to make a website created with Indexhibit more responsive
+Some code modifications to make a website created with Indexhibit more responsive
