@@ -23,8 +23,6 @@ INDEXHIBIT MODIFICATIONS
 
 - For the Logo and dropdown menu to work, I added the following code to the "Pre-Nav" text editor:
 
-<div class='top-nav'><a href="https://neon-archive.com"><left><img src="https://i.ibb.co/1nnKTwV/neon-logo-001.png" alt="neon-logo-001" width="60px" border="0"></a></br></br></br>
-
 <a href="http://neon-archive.com/"<h1 class='h1'>NEoN DIGITAL ARTS ARCHIVE</h1></a></div><div class='toggle-hold'><a href='#' id='toggle' class><i id='toggler' class="icono-hamburger" onclick="myFunction(); myFunction2(); changeHeight();"></i></a></div>
 
 
