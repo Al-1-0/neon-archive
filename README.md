@@ -21,9 +21,8 @@ Link it on index.php like this:
 
 INDEXHIBIT MODIFICATIONS
 
-- For the Logo and dropdown menu to work, I added the following code to the "Pre-Nav" text editor:
-
-<div class='toggle-hold'><a href='#' id='toggle' class><i id='toggler' class="icono-hamburger" onclick="myFunction(); myFunction2(); changeHeight();"></i></a></div>
+- For the Logo and dropdown menu to work, I added several things to the "Pre-Nav" text editor such as my JavaScript functions and icon class and ids (e.g. icono-hamburger).
+- I have included this in the "pre-nav.text" file - note that this file contains code that should only be used in the 'Pre-Nav' text editor and not as a site page.
 
 
 INDEX.PHP MODIFICATIONS USING JAVASCRIPT
