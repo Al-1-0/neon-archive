@@ -59,6 +59,7 @@ function changeHeight() {
 }
 </script>
 
+
 INDEX.PHP LAYOUT MODIFICATIONS
 
 - I used a <div> id #wrapper to to wrap around the original Indexhibit layout. 
@@ -67,17 +68,20 @@ INDEX.PHP LAYOUT MODIFICATIONS
 - Please note that for the JavaScript function "x.style.display" to work you should type <div id='index' class>  
   so that the class is blank :: this helps the function toggle work.
 
+  
 NAV.JS 
 
 - I modified this file from https://eatock.com and made it so the opener and closer functions would link to the icons 
   'icono-hamburger' and 'icono-cross'
 - It should work if you choose to use different icons for this purpose but make sure the icon names are the same in base.css 
   
+  
 BASE.CSS
   
 - This is where to look out for #wrapper, #index, #exhibit rules.
 - I used a little of bit code from http://eatock.com 
 - The additional rules for the icons are in base.css
+ 
   
 STYLE CSS:
   
