@@ -21,9 +21,7 @@ Link it on index.php like this:
 
 INDEXHIBIT MODIFICATIONS
 
-- For the Logo and dropdown menu to work, I added the following code to the "Pre-Nav" text editor: /*
-
-<a href="http://neon-archive.com/"<h1 class='h1'>NEoN DIGITAL ARTS ARCHIVE</h1></a></div> */
+- For the Logo and dropdown menu to work, I added the following code to the "Pre-Nav" text editor:
 
 <div class='toggle-hold'><a href='#' id='toggle' class><i id='toggler' class="icono-hamburger" onclick="myFunction(); myFunction2(); changeHeight();"></i></a></div>
 
