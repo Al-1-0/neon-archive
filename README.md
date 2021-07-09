@@ -62,8 +62,8 @@ function changeHeight() {
 
 INDEX.PHP LAYOUT MODIFICATIONS
 
-- I used a <div> id #wrapper to to wrap around the original Indexhibit layout. 
-- The <div id='wrapper'> is added to index.php before the <div id='index'> and closed after the 
+- I used a div id #wrapper to to wrap around the original Indexhibit layout. 
+- The div id='wrapper' is added to index.php before the div id='index' and closed after the 
   <plugin:page:closing /> line.
 - Please note that for the JavaScript function "x.style.display" to work you should type <div id='index' class>  
   so that the class is blank :: this helps the function toggle work.
